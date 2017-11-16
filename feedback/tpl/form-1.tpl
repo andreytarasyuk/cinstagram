@@ -3,8 +3,8 @@
     <td colspan="2"><strong>Заголовок в теле письма</strong></td>
   </tr>
   <tr>
-    <td>%%name.title%%</td>
-    <td>%%name.value%%</td>
+    <td>%%e-mail.title%%</td>
+    <td>%%e-mail.value%%</td>
   </tr>
   <tr>
     <td>%%tell.title%%</td>

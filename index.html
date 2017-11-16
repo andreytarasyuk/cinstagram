@@ -12,8 +12,8 @@
 	<!-- Libs stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
-	<link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
+	<link rel="stylesheet" href="feedback/css/jquery.arcticmodal.css">
+	<link rel="stylesheet" href="feedback/css/jquery.jgrowl.css">
 
 	<link rel="stylesheet" media="all" href="css/style.min.css">
 </head>
@@ -78,9 +78,9 @@
 										<input type="text" name="tell" class="input input-rounded" placeholder="Введите ваш телефон">
 									</div>
 									<div class="form__input">
-										<input type="text" name="mail" class="input input-rounded" placeholder="Электронная почта">
+										<input type="text" name="e-mail" class="input input-rounded" placeholder="Электронная почта">
 									</div>
-									<button type="submit" name="send" class="feedback btn btn-pink btn-form">
+									<button type="button" name="send" class="feedback btn btn-pink btn-form">
 										<i class="icon icon-gift"></i>
 										<span>Получить 7 дней</span>
 										<i class="icon icon-arrow"></i>
@@ -472,14 +472,14 @@
 						<h2>Есть вопросы?</h2>
 					</div>
 					<p>Оставьте Ваши контактные данные и менеджер свяжется с Вами в <br />течение 15 минут для обсуждений деталей сотрудничества</p>
-					<form action="/" class="form form-questions">
+					<form action="" name="form-2" class="form form-questions">
 						<div class="form__input">
-							<input type="text" class="input" placeholder="Ваше имя">
+							<input type="text" name="name" class="input" placeholder="Ваше имя">
 						</div>
 						<div class="form__input">
-							<input type="text" class="input" placeholder="Номер телефона">
+							<input type="text" name="tell" class="input" placeholder="Номер телефона">
 						</div>
-						<button type="submit" class="btn btn-pink btn-contact">+ Связаться</button>
+						<button type="button" name="send" class="feedback btn btn-pink btn-contact">+ Связаться</button>
 					</form>
 				</div>
 			</div>
