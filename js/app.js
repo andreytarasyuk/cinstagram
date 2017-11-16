@@ -20,13 +20,13 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
-	// $('.js-scroll-to').on("click", function(e){
-	// 	e.preventDefault();
-	// 	var anchor = $(this);
-	// 	$('html, body').stop().animate({
-	// 		scrollTop: $(anchor.attr('href')).offset().top
-	// 	}, 1000);
-	// });
+	$('.js-scroll-to').on("click", function(e){
+		e.preventDefault();
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+		}, 1000);
+	});
 
 
 });

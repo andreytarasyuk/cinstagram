@@ -2,7 +2,8 @@
 <html lang="ru-Ru">
 <head>
 	<meta charset="utf-8">
-	<title>Главная</title>
+	<title>➤ SMM BDSM – сервис продвижения INSTAGRAM, раскрутка, бесплатные подписчики в Инстаграме.</title>
+	<meta name="keywords" content="insta, tooligram, instaplus, продвижение, раскрутка, смм, smm, instagram" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#fff">
@@ -11,6 +12,8 @@
 	<!-- Libs stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+	<link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
 
 	<link rel="stylesheet" media="all" href="css/style.min.css">
 </head>
@@ -29,10 +32,10 @@
 				<div class="header-right">
 					<nav class="nav header__nav">
 						<ul class="menu header__menu">
-							<li><a href="#">Стоимость</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#"><i class="icon icon-instagram"></i></a></li>
+							<li><a href="#js-product" class="js-scroll-to">Стоимость</a></li>
+							<li><a href="#js-reviews" class="js-scroll-to">Отзывы</a></li>
+							<li><a href="#js-faq" class="js-scroll-to">FAQ</a></li>
+							<li><a href="#js-reviews" class="js-scroll-to"><i class="icon icon-instagram"></i></a></li>
 						</ul>
 					</nav>
 					<a href="#" class="btn btn-transparent header__btn">Заполнить бриф</a>
@@ -70,14 +73,14 @@
 								<p>Введите свой номер телефона и e-mail и получите 7 дней сервиса продвижения бесплатно.</p>
 							</div>
 							<div class="write__content">
-								<form action="/" class="form">
+								<form action="" name="form-1" class="form">
 									<div class="form__input">
-										<input type="text" class="input input-rounded" placeholder="Введите ваш телефон">
+										<input type="text" name="tell" class="input input-rounded" placeholder="Введите ваш телефон">
 									</div>
 									<div class="form__input">
-										<input type="text" class="input input-rounded" placeholder="Электронная почта">
+										<input type="text" name="mail" class="input input-rounded" placeholder="Электронная почта">
 									</div>
-									<button type="submit" class="btn btn-pink btn-form">
+									<button type="submit" name="send" class="feedback btn btn-pink btn-form">
 										<i class="icon icon-gift"></i>
 										<span>Получить 7 дней</span>
 										<i class="icon icon-arrow"></i>
@@ -138,7 +141,7 @@
 	<!-- about END -->
 
 	<!-- product BEGIN -->
-	<div class="product">
+	<div class="product" id="js-product">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -310,7 +313,7 @@
 	<!-- payment END -->
 
 	<!-- reviews BEGIN -->
-	<div class="reviews">
+	<div class="reviews" id="js-reviews">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -323,28 +326,28 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-4 col-xs-6 reviews__item-mob">
 					<div class="reviews__item">
-						<a href="#">
+						<a href="img/img-reviews-00.png" data-fancybox="group-1">
 							<img src="img/img-reviews-00.png" alt="reviews">
 						</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-xs-6 reviews__item-mob">
 					<div class="reviews__item">
-						<a href="#">
+						<a href="img/img-reviews-01.png" data-fancybox="group-1">
 							<img src="img/img-reviews-01.png" alt="reviews">
 						</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-xs-6 reviews__item-mob">
 					<div class="reviews__item">
-						<a href="#">
+						<a href="img/img-reviews-02.png" data-fancybox="group-1">
 							<img src="img/img-reviews-02.png" alt="reviews">
 						</a>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-xs-6 reviews__item-mob">
 					<div class="reviews__item">
-						<a href="#">
+						<a href="img/img-reviews-03.png" data-fancybox="group-1">
 							<img src="img/img-reviews-03.png" alt="reviews">
 						</a>
 					</div>
@@ -355,7 +358,7 @@
 	<!-- reviews END -->
 
 	<!-- faq BEGIN -->
-	<div class="faq">
+	<div class="faq" id="js-faq">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -510,6 +513,16 @@
 	<script src="js/vendor/jquery-3.1.1.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/jquery.fancybox.min.js"></script>
+	<script src="feedback/js/feedback.js"></script>
+	<script src="feedback/js/jquery.arcticmodal.js"></script>
+	<script src="feedback/js/jquery.jgrowl.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(document).on('click', '.modal_btn', function(){
+				$('#small-modal').arcticmodal();
+			});
+		});
+	</script>
 	<script src="js/app.js"></script>
 	<!-- script end -->
 
